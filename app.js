@@ -37,10 +37,10 @@ class App extends React.Component {
     onSubmit = (event) => {
         event.preventDefault();
         
-        const tmp = "Name :" + this.state.comments.concat(this.state.name) + ", Message: " + this.state.comments.concat(this.state.message);
+        const tmp = [{name: this.state.comments.concat(this.state.name), message: this.state.comments.concat(this.state.message)}];
 
         this.setState({
-            comments: [{tmp}],
+            comments: tmp,
             name: "",
             message: ""
         })
