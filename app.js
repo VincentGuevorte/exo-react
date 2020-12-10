@@ -40,7 +40,7 @@ class App extends React.Component {
         const tmp = "Name :" + this.state.comments.concat(this.state.name) + ", Message: " + this.state.comments.concat(this.state.message);
 
         this.setState({
-            comments: [tmp],
+            comments: [{tmp}],
             name: "",
             message: ""
         })
